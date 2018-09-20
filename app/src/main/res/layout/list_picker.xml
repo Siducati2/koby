@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="center"
+	android:orientation="vertical"
+	android:padding="0dp"
+	android:background="@color/new_bg_background">
+
+	<FrameLayout
+		android:id="@+id/navTitle"
+		android:layout_width="match_parent"
+		android:layout_height="70dp"
+		android:background="@color/new_Headerbackground_opacity">
+
+		<RelativeLayout
+			android:id="@+id/headerRelativeLayout"
+			android:layout_width="fill_parent"
+			android:layout_marginTop="20dp"
+			android:layout_height="match_parent"
+			android:layout_below="@+id/navTitle">
+
+			<Button
+				android:id="@+id/buttonBack"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:layout_gravity="left|center_vertical"
+				android:layout_marginLeft="15dip"
+				android:layout_marginTop="1dip"
+				android:background="@drawable/header_back"
+				android:text=""/>
+
+			<TextView
+				android:id="@+id/textTitle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBaseline="@+id/buttonRefresh"
+				android:layout_alignBottom="@+id/buttonRefresh"
+				android:layout_centerHorizontal="true"
+				android:singleLine="true"
+				android:text= " Title "
+				android:textColor="@color/black"
+				android:textColorHint="#999999"
+				android:textSize="15sp" />
+
+			<Button
+				android:id="@+id/buttonreplay"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:layout_alignParentEnd="true"
+				android:layout_alignParentRight="true"
+				android:layout_gravity="right|center_vertical"
+				android:layout_marginRight="55dip"
+				android:layout_marginTop="1dip"
+				android:background="@drawable/ic_menu_reply"
+				android:text=""
+				android:visibility="invisible"/>
+			<Button
+				android:id="@+id/buttonAdd"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:layout_alignParentEnd="true"
+				android:layout_alignParentRight="true"
+				android:layout_gravity="right|center_vertical"
+				android:layout_marginRight="55dip"
+				android:layout_marginTop="1dip"
+				android:background="@drawable/header_add"
+				android:text=""
+				android:visibility="invisible"/>
+			<Button
+				android:id="@+id/buttonnext"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:layout_alignParentEnd="true"
+				android:layout_alignParentRight="true"
+				android:layout_gravity="right|center_vertical"
+				android:layout_marginRight="55dip"
+				android:layout_marginTop="1dip"
+				android:background="@drawable/ic_menu_next"
+				android:text=""
+				android:visibility="invisible"/>
+
+			<Button
+				android:id="@+id/buttonRefresh"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:layout_alignParentRight="true"
+				android:layout_alignParentEnd="true"
+				android:layout_marginRight="10dip"
+				android:layout_marginTop="1dip"
+				android:text=""
+				android:layout_gravity="right|center_vertical"
+				android:background="@drawable/header_reload"
+				android:visibility="invisible"/>
+		</RelativeLayout>
+	</FrameLayout>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		style="@style/OOScreen"
+		android:background="@color/color_trans"
+		android:layout_below="@+id/navTitle">
+
+		<LinearLayout style="@style/OOUniContWholePage" android:visibility="gone" android:id="@+id/list_container">
+			<ListView android:id="@+id/android:list" style="@style/OOListPickerView" />
+		</LinearLayout>
+
+		<TextView android:id="@+id/android:empty" style="@style/OOUniEmpty" android:text="@string/empty" />
+
+	</LinearLayout>
+</RelativeLayout>

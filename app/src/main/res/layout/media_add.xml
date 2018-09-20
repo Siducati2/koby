@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:orientation="vertical"
+	android:padding="1dp"
+	android:background="@color/new_bg_background">
+	<!--
+	<FrameLayout
+		android:id="@+id/navTitle"
+		android:layout_width="match_parent"
+		android:layout_height="70dp"
+		android:background="@color/color_trans">
+
+		<RelativeLayout
+			android:id="@+id/headerRelativeLayout"
+			android:layout_width="fill_parent"
+			android:layout_marginTop="20dp"
+			android:layout_height="match_parent"
+			android:layout_below="@+id/navTitle">
+
+			<Button
+				android:id="@+id/buttonBack"
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:layout_gravity="left|center_vertical"
+				android:layout_marginLeft="15dip"
+				android:layout_marginTop="1dip"
+				android:background="@drawable/icon_general_backarrow"
+				android:text=""/>
+
+			<TextView
+				android:id="@+id/textTitle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBaseline="@+id/buttonBack"
+				android:layout_alignBottom="@+id/buttonBack"
+				android:layout_toEndOf="@+id/buttonBack"
+				android:layout_toRightOf="@+id/buttonBack"
+				android:singleLine="true"
+				android:layout_marginLeft="10dp"
+				android:text="Title"
+				android:textColor="#000000"
+				android:textColorHint="#999999"
+				android:textSize="14sp"/>
+
+			<Button
+				android:id="@+id/buttonsubmit"
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:layout_alignParentEnd="true"
+				android:layout_alignParentRight="true"
+				android:layout_gravity="right|center_vertical"
+				android:layout_marginRight="15dip"
+				android:layout_marginTop="1dip"
+				android:background="@drawable/ic_menu_ok"
+				android:text=""/>
+
+		</RelativeLayout>
+
+	</FrameLayout>
+	-->
+<!--
+	<FrameLayout
+		android:id="@+id/navTitle"
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:background="@drawable/innohawk_header_background">
+		<RelativeLayout
+			android:id="@+id/rl_head"
+			android:layout_width="fill_parent"
+			android:layout_height="match_parent"
+			android:layout_below="@+id/navTitle">
+			<Button
+				android:id="@+id/buttonBack"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:layout_marginBottom="5dp"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentBottom="true"
+				android:layout_centerVertical="true"
+				android:layout_marginLeft="15dp"
+				android:background="@drawable/header_back"/>
+			<TextView
+				android:id="@+id/textTitle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBaseline="@+id/buttonsubmit"
+				android:layout_alignBottom="@+id/buttonsubmit"
+				android:layout_centerHorizontal="true"
+				android:singleLine="true"
+				android:text= " Title "
+				android:textColor="@color/black"
+				android:textColorHint="#999999"
+				android:textSize="15sp" />
+			<Button
+				android:id="@+id/buttonsubmit"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:layout_marginRight="15dp"
+				android:background="@drawable/header_submit"/>
+		</RelativeLayout>
+	</FrameLayout>
+-->
+	<!--<FrameLayout
+		android:id="@+id/rl_search"
+		android:layout_width="match_parent"
+		android:layout_height="70dp"
+		android:background="@color/header_layout">
+		<RelativeLayout
+			android:id="@+id/rl_head"
+			android:layout_width="fill_parent"
+			android:layout_height="match_parent"
+			android:layout_below="@+id/navTitle"
+			android:layout_marginTop="5dp">
+			<Button
+				android:id="@+id/buttonBack"
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:layout_marginBottom="5dp"
+				android:clickable="true"
+				android:text=""
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentBottom="true"
+				android:layout_marginLeft="15dp"
+				android:layout_centerVertical="true"
+				android:background="@drawable/header_back" />
+			<TextView
+				android:id="@+id/textTitle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBaseline="@+id/buttonsubmit"
+				android:layout_alignBottom="@+id/buttonsubmit"
+				android:layout_centerHorizontal="true"
+				android:singleLine="true"
+				android:text="Add"
+				android:textColor="@color/bg_background"
+				android:textColorHint="#999999"
+				android:textSize="20sp" />
+			<Button
+				android:id="@+id/buttonsubmit"
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:layout_marginBottom="5dp"
+				android:clickable="true"
+				android:text=""
+				android:layout_alignParentRight="true"
+				android:layout_alignParentBottom="true"
+				android:layout_marginRight="15dp"
+				android:layout_centerVertical="true"
+				android:background="@drawable/header_submit" />
+		</RelativeLayout>
+	</FrameLayout>-->
+
+	<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" style="@style/OOScreen"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentRight="true"
+		android:layout_alignEnd="@+id/rl_infodialog"
+		android:layout_alignParentStart="true"
+		android:layout_alignRight="@+id/rl_infodialog"
+		android:scrollIndicators="none"
+		android:scrollbars="none"
+		android:overScrollMode="never"
+		android:paddingTop="70dp"
+		android:paddingBottom="60dp"
+		android:clipToPadding="false"
+		android:background="@color/color_trans">
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<LinearLayout style="@style/OOUniContWholePage">
+				<TextView
+					android:id="@+id/text_file"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="15dp"
+					android:textAppearance="@style/MyDefaultTextAppearance"
+					android:text="@string/media_file" />
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content">
+
+					<RelativeLayout
+						android:id="@+id/rl_buttonAdd"
+						android:layout_width="fill_parent"
+						android:layout_height="115dp" >
+					<ImageView
+						android:id="@+id/media_file_preview"
+						android:layout_width="206dp"
+						android:layout_height="115dp"
+						android:layout_alignParentTop="true"
+						android:layout_alignParentLeft="true"
+						android:background="#000" />
+
+						<LinearLayout
+							android:orientation="vertical"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:layout_alignParentEnd="true"
+							android:layout_alignParentRight="true"
+							android:layout_alignBaseline="@+id/media_file_preview"
+							android:layout_alignBottom="@+id/media_file_preview"
+							android:layout_toEndOf="@+id/media_file_preview"
+							android:layout_toRightOf="@+id/media_file_preview">
+
+							<Button android:id="@+id/media_btn_from_camera"
+								android:text="@string/media_from_camera"
+								android:layout_width="fill_parent"
+								android:layout_marginLeft="15dp"
+								android:layout_marginBottom="15dp"
+								android:background="@drawable/innohawk_borderbutton_main"
+								android:textColor="@color/black"
+								android:layout_height="wrap_content" />
+
+							<Button android:id="@+id/media_btn_from_gallery"
+								android:text="@string/media_from_gallery"
+								android:layout_width="fill_parent"
+								android:background="@drawable/innohawk_borderbutton_main"
+								android:textColor="@color/black"
+								android:layout_marginLeft="15dp"
+								android:layout_height="wrap_content" />
+
+						</LinearLayout>
+					</RelativeLayout>
+
+				</LinearLayout>
+
+				<TextView
+					android:id="@+id/text_title"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="5dp"
+					android:layout_marginTop="35dp"
+					android:text="@string/media_caption_title"
+					android:textAppearance="@style/MyDefaultTextAppearance"
+					tools:visibility="gone" />
+
+				<EditText
+					android:id="@+id/media_title"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="5dp"
+					android:layout_marginTop="15dp"
+					android:background="@drawable/innohawk_border_edittext"
+					android:singleLine="true"
+					android:visibility="gone" />
+
+				<TextView
+					android:id="@+id/text_tag"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/media_caption_tags"
+					android:textAppearance="@style/MyDefaultTextAppearance"
+					android:visibility="gone" />
+
+				<EditText
+					android:id="@+id/media_tags"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="5dp"
+					android:layout_marginTop="15dp"
+					android:background="@drawable/innohawk_border_edittext"
+					android:singleLine="true"
+					android:visibility="gone" />
+
+				<TextView
+					android:id="@+id/text_desc"
+					android:layout_marginTop="10dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textAppearance="@style/MyDefaultTextAppearance"
+					android:text="@string/media_caption_desc" />
+				<EditText android:id="@+id/media_desc"
+					android:singleLine="false"
+					android:layout_marginBottom="5dp"
+					android:layout_marginTop="15dp"
+					android:gravity="top"
+					android:background="@drawable/innohawk_border_edittext"
+					android:layout_width="fill_parent"
+					android:layout_height="200dip" />
+
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+
+	<FrameLayout
+		android:id="@+id/navTitle"
+		android:layout_width="match_parent"
+		android:layout_height="70dp"
+		android:background="@drawable/innohawk_header_background">
+		<RelativeLayout
+			android:id="@+id/rl_head"
+			android:layout_width="fill_parent"
+			android:layout_height="match_parent"
+			android:layout_below="@+id/navTitle">
+			<Button
+				android:id="@+id/buttonBack"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:layout_alignParentLeft="true"
+				android:layout_centerVertical="true"
+				android:layout_marginLeft="15dp"
+				android:background="@drawable/header_back"/>
+			<TextView
+				android:id="@+id/textTitle"
+				android:layout_width="fill_parent"
+				android:layout_height="30dp"
+				android:layout_centerVertical="true"
+				android:layout_toEndOf="@+id/buttonBack"
+				android:layout_toLeftOf="@+id/buttonsubmit"
+				android:layout_toRightOf="@+id/buttonBack"
+				android:layout_toStartOf="@+id/buttonsubmit"
+				android:ems="12"
+				android:gravity="center_horizontal|center"
+				android:layout_marginLeft="15dp"
+				android:layout_marginRight="15dp"
+				android:singleLine="true"
+				android:text= " - "
+				android:textColor="@color/black"
+				android:textColorHint="#999999"
+				android:textSize="15sp" />
+			<Button
+				android:id="@+id/buttonsubmit"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:layout_marginRight="15dp"
+				android:background="@drawable/header_submit"/>
+		</RelativeLayout>
+	</FrameLayout>
+	<RelativeLayout
+		android:id="@+id/rl_infodialog"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" >
+	</RelativeLayout>
+
+</RelativeLayout>

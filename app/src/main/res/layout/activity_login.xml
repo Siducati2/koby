@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/OOUniCont"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_background" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/actionbar_shadow"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/OOUniContWholePage"
+            android:layout_height="match_parent"
+            android:background="@color/color_trans" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_username"
+                android:textAppearance="@style/MyDefaultTextAppearance"
+                android:textColor="@color/home_button_bubble_text_color" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/home_button_bubble_text_color"
+                android:textColorHint="@color/home_button_bubble_text_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_password"
+                android:textAppearance="@style/MyDefaultTextAppearance"
+                android:textColor="@color/home_button_bubble_text_color" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:password="true"
+                android:singleLine="true"
+                android:textColor="@color/home_button_bubble_text_color"
+                android:textColorHint="@color/home_button_bubble_text_color" />
+
+
+            <Button
+                android:id="@+id/submit"
+                style="@style/OOSubmitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginBottom="5dip"
+                android:background="#ff81BEF7"
+                android:text="@string/btn_login"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="107dp"
+                android:layout_marginTop="50dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:id="@+id/logoViewMain"
+                android:src="@drawable/logo_about_512" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fb_login_button_wrapper"
+            style="@style/OOUniContWholePage"
+            android:layout_height="10dp"
+            android:layout_weight="0.49"
+            android:background="@color/color_trans"
+            android:visibility="invisible">
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/fb_login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+
+
+
+        </LinearLayout>
+
+      <!--  <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/logocuadrado" />-->
+
+    </LinearLayout>
+
+</ScrollView>

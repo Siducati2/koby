@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RelativeLayout
+        android:id="@+id/rl_cell"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/color_trans">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/color_trans">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true">
+                <ImageView
+                    android:id="@+id/img_iconpin"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/black"
+                    android:contentDescription="icon" />
+                <com.innohawk.dan.appconfig.LoadImgNew
+                    android:id="@+id/media_images_image_view"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:contentDescription="spinner image"
+                    android:background="@color/color_trans"/>
+                <TextView
+                    android:id="@+id/newnoti"
+                    android:layout_width="60dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="-60dp"
+                    android:layout_alignBottom="@+id/txt_data"
+                    android:layout_alignTop="@+id/img_iconpin"
+                    android:layout_toEndOf="@+id/img_iconpin"
+                    android:layout_toRightOf="@+id/img_iconpin"
+                    android:contentDescription="icon"
+                    android:gravity="center_horizontal|left"
+                    android:text="New!"
+                    android:textColor="#ff0000"
+                    android:textStyle="bold"
+                    android:textSize="6sp"/>
+
+                <TextView
+                    android:id="@+id/txt_data"
+                    android:layout_width="150dp"
+                    android:layout_height="12dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/img_iconpin"
+                    android:layout_toEndOf="@+id/newnoti"
+                    android:layout_toRightOf="@+id/newnoti"
+                    android:gravity="center_vertical|right"
+                    android:text="about 1 day"
+                    android:textColor="@color/aluminum"
+                    android:textSize="8sp" />
+
+                <TextView
+                    android:id="@+id/txt_description"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/img_iconpin"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/newnoti"
+                    android:layout_toEndOf="@+id/img_iconpin"
+                    android:layout_toRightOf="@+id/img_iconpin"
+                    android:gravity="left"
+                    android:text=" description"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

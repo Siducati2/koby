@@ -1,0 +1,32 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:background="@drawable/xml_bg_list_item"
+	android:padding="5dip">
+
+	<FrameLayout
+		android:id="@+id/home_btn"
+		style="@style/OOHomeButtonCont"
+		android:background="#00ffffff">
+
+		<LinearLayout
+			style="@style/OOHomeButton"
+			android:background="#00ffffff">
+
+			<ImageView
+				android:id="@+id/home_btn_icon"
+				style="@style/OOHomeButtonImage"
+				android:src="@drawable/ic_home_messages" />
+
+			<TextView
+				android:id="@+id/home_btn_title"
+				style="@style/OOHomeButtonText"
+				android:text="@string/mail_menu"/>
+		</LinearLayout>
+	</FrameLayout>
+
+	<TextView
+		android:id="@+id/home_btn_bubble"
+		style="@style/OOHomeButtonBubble"
+		android:text="" />
+</FrameLayout>

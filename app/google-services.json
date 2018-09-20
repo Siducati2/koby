@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "951127257737",
+    "firebase_url": "https://budbuddee-1f201.firebaseio.com",
+    "project_id": "budbuddee-1f201",
+    "storage_bucket": "budbuddee-1f201.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951127257737:android:c456b6d8ec3222f3",
+        "android_client_info": {
+          "package_name": "com.innohawk.dan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "951127257737-ohkojt5g95dutlh2g4sq5pudv9i123dq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.innohawk.dan",
+            "certificate_hash": "894723f8b792df2a55db52199aa3b2af045387be"
+          }
+        },
+        {
+          "client_id": "951127257737-93oc5i2f79no9o70qhq781nnio7r00p7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFjEt1K_yI88bZv68V7iSUehzBv0-X9dA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "951127257737-93oc5i2f79no9o70qhq781nnio7r00p7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

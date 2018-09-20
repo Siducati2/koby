@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_trans"
+    android:id="@+id/rl_info_dialog_maps">
+
+    <Button
+        android:id="@+id/but_close"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_trans"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btn_yes"
+        android:layout_width="fill_parent"
+        android:layout_height="85dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="80dp"
+        android:background="@color/color_trans"
+        android:gravity="bottom"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="85dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/innohawk_border_dispensariesinfo"
+        android:gravity="bottom">
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:src="#000000"
+            android:background="@drawable/innohawk_border_thumb_round" />
+
+
+        <RatingBar
+            android:id="@+id/rate"
+            style="@style/innohawkRatingBarMap"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:contextClickable="false"
+            android:gravity="right|center_horizontal"
+            android:layout_marginRight="-70dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:scaleX="0.3"
+            android:scaleY="0.3"
+            android:stepSize="0.1" />
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_logo"
+            android:layout_toEndOf="@+id/img_logo"
+            android:layout_toLeftOf="@+id/rate"
+            android:layout_toRightOf="@+id/img_logo"
+            android:layout_toStartOf="@+id/rate"
+            android:gravity="left|center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="-45dp"
+            android:text=""
+            android:maxLines="1"
+            android:textColor="#000"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/textAd_orSe"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textTitle"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/img_logo"
+            android:layout_toRightOf="@+id/img_logo"
+            android:text=""
+            android:textColor="#000"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/textCity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textAd_orSe"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/img_logo"
+            android:layout_toRightOf="@+id/img_logo"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="#000"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/textHour"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textCity"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/img_logo"
+            android:layout_toRightOf="@+id/img_logo"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="#000"
+            android:textSize="10dp" />
+       <!-- <Button
+            android:id="@+id/btn_yes"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/color_trans"
+            android:clickable="true"
+            android:textStyle="bold" />-->
+        <Button
+            android:id="@+id/but_close_"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/txt_error"
+            android:background="@drawable/com_facebook_close"
+            android:text=""
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+</RelativeLayout>

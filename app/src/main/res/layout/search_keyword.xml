@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="center"
+	android:orientation="vertical"
+	android:padding="1dp"
+	android:background="@color/new_bg_background">
+	<FrameLayout
+		android:id="@+id/navTitle"
+		android:layout_width="match_parent"
+		android:layout_height="70dp"
+		android:background="@color/header_layout">
+		<RelativeLayout
+			android:id="@+id/rl_head"
+			android:layout_width="fill_parent"
+			android:layout_height="match_parent"
+			android:layout_below="@+id/navTitle"
+			android:layout_marginTop="5dp">
+			<Button
+				android:id="@+id/buttonBack"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:layout_alignParentLeft="true"
+				android:layout_centerVertical="true"
+				android:layout_marginLeft="15dp"
+				android:background="@drawable/header_back"/>
+			<TextView
+				android:id="@+id/textTitle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBaseline="@+id/buttonsubmit"
+				android:layout_alignBottom="@+id/buttonsubmit"
+				android:layout_centerHorizontal="true"
+				android:singleLine="true"
+				android:text= " Title "
+				android:textColor="@color/black"
+				android:textColorHint="#999999"
+				android:textSize="15sp" />
+			<Button
+				android:id="@+id/buttonsubmit"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:layout_marginRight="15dp"
+				android:background="@drawable/header_submit"/>
+		</RelativeLayout>
+	</FrameLayout>
+	<!--<FrameLayout
+		android:id="@+id/navTitle"
+		android:layout_width="match_parent"
+		android:layout_height="70dp"
+		android:background="@color/color_trans">
+
+		<RelativeLayout
+			android:id="@+id/headerRelativeLayout"
+			android:layout_width="fill_parent"
+			android:layout_marginTop="20dp"
+			android:layout_height="match_parent"
+			android:layout_below="@+id/navTitle">
+
+			<Button
+				android:id="@+id/buttonBack"
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:layout_gravity="left|center_vertical"
+				android:layout_marginLeft="15dip"
+				android:layout_marginTop="1dip"
+				android:background="@drawable/icon_general_backarrow"
+				android:text=""/>
+
+			<TextView
+				android:id="@+id/textTitle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBaseline="@+id/buttonBack"
+				android:layout_alignBottom="@+id/buttonBack"
+				android:layout_toEndOf="@+id/buttonBack"
+				android:layout_toRightOf="@+id/buttonBack"
+				android:singleLine="true"
+				android:layout_marginLeft="15dp"
+				android:text="Title"
+				android:textColor="#000000"
+				android:textColorHint="#999999"
+				android:textSize="14sp"/>
+
+			<Button
+				android:id="@+id/buttonsubmit"
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:layout_alignParentRight="true"
+				android:layout_alignParentEnd="true"
+				android:layout_marginRight="15dip"
+				android:layout_marginTop="1dip"
+				android:text=""
+				android:layout_gravity="right|center_vertical"
+				android:background="@drawable/ic_menu_ok"/>
+		</RelativeLayout>
+	</FrameLayout>-->
+	<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+		style="@style/OOScreen"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="@color/color_trans"
+		android:layout_below="@+id/navTitle">
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+	<LinearLayout style="@style/OOUniContWholePage">
+
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="@style/MyDefaultTextAppearance"
+			android:text="@string/search_keyword_row_caption" />
+		<EditText android:id="@+id/keyword"
+			android:singleLine="true"
+			android:background="@drawable/innohawk_border_edittext"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+
+
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="@style/MyDefaultTextAppearance"
+			android:text="@string/search_online_only_row_caption" />
+		<CheckBox android:id="@+id/online_only"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:buttonTint="@color/header_layout"/>
+
+
+		<TextView android:id="@+id/with_photos_only_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="@style/MyDefaultTextAppearance"
+			android:text="@string/search_with_photos_only_row_caption" />
+		<CheckBox android:id="@+id/with_photos_only"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:buttonTint="@color/header_layout"/>
+
+	</LinearLayout>
+	</LinearLayout>
+	</ScrollView>
+</RelativeLayout>

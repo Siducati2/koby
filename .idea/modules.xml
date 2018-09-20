@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/budbuddee.iml" filepath="$PROJECT_DIR$/budbuddee.iml" />
+      <module fileurl="file://$PROJECT_DIR$/koby/koby.iml" filepath="$PROJECT_DIR$/koby/koby.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nineoldandroids-2.4.0/nineoldandroids-2.4.0.iml" filepath="$PROJECT_DIR$/nineoldandroids-2.4.0/nineoldandroids-2.4.0.iml" />
+    </modules>
+  </component>
+</project>

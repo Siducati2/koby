@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Config param -->
+    <string name="Gcm_Sender_id">951127257737</string>
+    <string name="app_name">BudBuddee</string>
+    <string name="title">BudBuddee</string>
+    <string name="Movement_Student">BudBuddee</string>
+    <string name="special_video">Special</string>
+    <string name="special_help">Help</string>
+    <string name="ud_distance">milles</string>
+    <string name="ud_age">age/s</string>
+
+    <!-- MAP -->
+    <string name="Maps_dialog_Title">Title: </string>
+    <string name="Maps_dialog_Address">Address: </string>
+    <string name="Maps_dialog_City">City: </string>
+    <string name="Maps_dialog_Sex">Sex: </string>
+    <string name="Maps_dialog_Undefined">undefined</string>
+    <string name="Maps_dialog_HourOpen">Store: Opened</string>
+    <string name="Maps_dialog_HourClose">Store: Closed</string>
+    <string name="Maps_dialog_HourNo">Schedule not defined</string>
+    <string name="Maps_dialog_TypeAll">Medicinal + Recreational</string>
+    <string name="Maps_dialog_TypeMed">Medicinal</string>
+    <string name="Maps_dialog_TypeRec">Recreational</string>
+    <!-- TAB -->
+    <string name="TabChat">Chat</string>
+    <string name="TabFeed">Podium</string>
+    <string name="TabVideo">Videos</string>
+    <string name="TabNewsFeed">News Feed</string>
+    <string name="TabMore">Menu</string>
+    <string name="NotifyHome">Notifications</string>
+
+    <!-- TABS -->
+    <string name="TabCommentTitle">Post Comments</string>
+    <string name="TabCommentText">Write Here your Comment</string>
+    <string name="TabCommentSelect">Select Your Option to Post: </string>
+    <string name="TabCommentOption1">to Wall</string>
+    <string name="TabCommentOption2">to Forum</string>
+    <string name="TabCommentOption3">to Article</string>
+    <string name="TabCommentAction">Post Comment</string>
+    <string name="TabCommentExceptionCmt">Your Comment should be more large</string>
+    <string name="TabCommentExceptionSelect">You must select at least one option</string>
+    <string name="TabCommentPostOk">Thanks for participating. Your comment will be published shortly</string>
+    <string name="TabCommentGuest">To comment, you must first log in as a member</string>
+    <string name="TabVideoException">To view your Videos or Add new Video, you must first log in as a member</string>
+    <string name="TabNotiException">To view your Notifications or Add Notifications, you must first log in as a member</string>
+    <!-- ToolBar Up -->
+    <string name="toolbar_menu_store">Store</string>
+    <string name="toolbar_open">Open</string>
+    <string name="toolbar_close">Closed</string>
+    <string name="toolbar_menu_logout">Log(in/out)</string>
+    <string name="toolbar_menu_refresh">Refresh</string>
+    <string name="toolbar_menu_contact">BudBuddee</string>
+    <string name="toolbar_menu_settings">Settings</string>
+    <string name="toolbar_menu_budgames">Bud-Games</string>
+    <string name="toolbar_menu_budads">Bud-Classifieds</string>
+    <string name="toolbar_menu_budevents">Bud-Events</string>
+    <string name="toolbar_menu_budstrains">Bud-Strains</string>
+    <string name="toolbar_menu_budworld">Bud-World</string>
+    <string name="toolbar_menu_stats">Podium</string>
+    <string name="toolbar_menu_buddess">Buddees</string>
+    <string name="toolbar_menu_timeline">TimeLine</string>
+    <string name="toolbar_menu_profile">Profile</string>
+    <string name="toolbar_menu_games_coming">Coming Soon...</string>
+    <!-- Exception user guest -->
+    <string name="userGuest_exception">You must login to perform this action</string>
+    <string name="userGuest_exception_noprofile">This is a guest user</string>
+    <!-- Send Email -->
+    <string name="sendEmail_Subject">Contact from BudBuddee</string>
+    <string name="sendEmail_Client">Choose User</string>
+    <string name="sendEmail_NoClient">Warning: Field User empty</string>
+    <!-- Header -->
+    <string name="header_Search">Search</string>
+    <string name="header_Search_layout">Searching by: </string>
+
+    <!-- Filter Maps and ListView Dispensaries -->
+    <string name="filter_dispensaries_showall">Show All</string>
+    <string name="filter_dispensaries_typeMed">Medicinal</string>
+    <string name="filter_dispensaries_typeRec">Recreational</string>
+    <string name="filter_dispensaries_HourOpen">Open</string>
+    <string name="filter_dispensaries_HourClosed">Closed</string>
+
+    <!-- Dispensaries -->
+    <string name="dispensary_phone">Call</string>
+    <string name="dispensary_nav">Navigation</string>
+    <string name="dispensary_web">Web</string>
+    <string name="dispensary_rate_title">Rate &amp; Comments</string>
+    <string name="dispensary_rate_send">Send</string>
+    <string name="dispensary_rate_author">Rate: </string>
+    <string name="dispensary_rate_your">Your Rate: </string>
+    <string name="dispensary_rate_hintcmt">Write Comments here</string>
+    <string name="dispensary_rate_tab1">Info</string>
+    <string name="dispensary_rate_tab2">Menu</string>
+    <string name="dispensary_rate_tab3">Review</string>
+    <string name="dispensary_CommentPostOk">Thanks for participating. Your comment will be published shortly</string>
+    <string name="dispensary_CommentGuest">To comment, you must first log in as a member</string>
+    <string name="dispensary_Exception">Your Comment should be more large</string>
+
+    <!-- Notifications -->
+    <string name="notifications_title">Notifications</string>
+    <string name="notifications_new">New!</string>
+    <string name="notifications_trash">Trash</string>
+
+    <!-- Dialogs -->
+    <string name="innohawk_dialog_cancel">Cancel</string>
+    <string name="innohawk_dialog_ok">Accept</string>
+    <string name="innohawk_dialog_title_remove">Atention</string>
+    <string name="innohawk_dialog_text_remove">Do you like remove this item?</string>
+    <string name="innohawk_dialog_field_remove">Not show more this alert</string>
+    <string name="innohawk_dialog_notdata">Not Data found</string>
+
+    <!-- Filter Activity -->
+    <string name="innohawk_filter_searchbar"> Search position by Address or zipcode</string>
+    <string name="innohawk_filter_ratio">Ratio</string>
+    <string name="innohawk_filter_profiles">Profiles</string>
+    <string name="innohawk_filter_profilesAges">Ages</string>
+    <string name="innohawk_filter_profilesGender">Gender</string>
+    <string name="innohawk_filter_profilesMale">Male</string>
+    <string name="innohawk_filter_profilesFemale">Female</string>
+    <string name="innohawk_filter_profilesGay">InterSex</string>
+    <string name="innohawk_filter_profilesStatus">Status</string>
+    <string name="innohawk_filter_profilesSingle">Single</string>
+    <string name="innohawk_filter_profilesCouple">Couple</string>
+    <string name="innohawk_filter_dispensaries">Dispensaries</string>
+    <string name="innohawk_filter_dispensariesTypes">Types</string>
+    <string name="innohawk_filter_dispensariesCat">Categories</string>
+    <string name="innohawk_filter_dispensariesList">Listing</string>
+    <string name="innohawk_filter_dispensariesHour">Schedule</string>
+    <string name="innohawk_filter_connects">Connects</string>
+    <string name="innohawk_filter_cancel">Cancel</string>
+    <string name="innohawk_filter_apply">Apply</string>
+
+    <!-- Text Share Location -->
+    <string name="google_location_text">Location</string>
+    <string name="google_location_textAccept">Accept</string>
+    <string name="google_location_textDecline">Decline</string>
+    <string name="google_location_textShare">Do you agree to share your location?</string>
+
+    <!-- Introduction Page -->
+    <string name="skip_button">SKIP</string>
+    <string name="done_button">DONE</string>
+    <string name="Intro_title_1">-</string>
+    <string name="Intro_text_1">-</string>
+    <string name="Intro_title_2">-</string>
+    <string name="Intro_text_2">-</string>
+    <string name="Intro_title_3">-</string>
+    <string name="Intro_text_3">-</string>
+    <!-- Main Page:: LogIn, SignUp & More -->
+    <string name="Main_login">Login</string>
+    <string name="Main_Forgot">Forgot Your Password?</string>
+    <string name="Main_Account">Don\'t have an account with us?</string>
+    <string name="Main_register">Register Now</string>
+    <string name="Main_menu_intro">Introduction</string>
+    <string name="Main_fb_error">Login attempt failed</string>
+    <string name="Main_fb_cancel">Login attempt canceled</string>
+    <string name="Main_fb_error_login">The email are ready exist</string>
+    <string name="Main_fb_toast_validate">Validated User</string>
+    <string name="Main_errorForgot">You must fill in the username or email</string>
+    <string name="Main_errorForgotConnect">There was a connection error</string>
+    <string name="Main_ForgotConnect">An email has been sent with the steps to follow. Please check that it is not in "junk" mail. Thank you</string>
+
+    <!-- Only CUSTOM Pages -->
+    <string name="Main_videos">Videos</string>
+    <string name="Main_groups">Groups</string>
+    <string name="Main_events">Events</string>
+    <string name="Main_blogs">Blogs</string>
+
+    <!-- SignUp Form -->
+    <string name="cont_signup">Continue</string>
+    <string name="nickname_signup">NickName</string>
+    <string name="first_signup">First Name</string>
+    <string name="last_signup">Last Name</string>
+    <string name="email_signup">E-mail</string>
+    <string name="pass_signup">Password</string>
+    <string name="confirmpass_signup">Confirm Password</string>
+    <string name="fullname_signup">Full Name</string>
+    <string name="phone_signup">Phone</string>
+    <string name="birth_signup">BirthDay  </string>
+    <string name="select_signup">Select</string>
+    <string name="terms_signup">I Accept Terms</string>
+    <string name="create_signup">Create and Account</string>
+    <string name="creating_signup">Creating account...</string>
+    <string name="congratulations_signup">Congratulations, you have successfully registered.</string>
+    <string name="usernameExist_signup">Error with the username. It already exists.</string>
+    <string name="emailExist_signup">Error with the email. It already exists.</string>
+    <string name="phoneExist_signup">Error with the phone. It already exists.</string>
+    <string name="failed_signup">Failure to register. Try again.</string>
+    <string name="error_signup">Registration failed. Reviews all fields.</string>
+    <string name="terms_accept_signup">You have to accept the terms.</string>
+    <string name="valid_username_signup">Please, enter a valid name</string>
+    <string name="valid_email_signup">Please, enter a valid email address</string>
+    <string name="valid_phone_signup">Please, enter a valid phone number</string>
+    <string name="valid_fullname_signup">At least 3 characters</string>
+    <string name="valid_birthday_signup">Please, enter a valid data</string>
+    <string name="valid_pass_signup">between 4-10 alphanumeric characters</string>
+    <string name="valid_confirmpass_signup">Passwords do not match</string>
+    <!-- Only Cleah -->
+    <string name="valid_phone_or_email">Please, enter a email address or phone number</string>
+
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_birthday">Birthday</string>
+    <string name="hint_name">Fullname</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="Main_login_socials"> -Or Login with Facebook- </string>
+    <string name="btn_link_to_login">Already registred! Login Me.</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="name">Fullname</string>
+
+    <!-- ABOUT & TERMS & PRIVACITY...:: HELP -->
+    <string name="about_help">About Us</string>
+    <string name="terms_help">Terms of Use</string>
+    <string name="privacity_help">Privacity</string>
+    <string name="Faqs_help">FAQ\'s</string>
+    <string name="Help_help">Help</string>
+    <string name="Help_contact">Contact</string>
+
+    <string name="error">Error</string>
+    <string name="close">Close</string>
+    <string name="access_denied">Access denied</string>
+    <string name="loading">Working...</string>
+    <string name="exception">Exception</string>
+    <string name="exception_out_of_memory">There is not enough free memory for the operation</string>
+    <string name="x_yo">%s y/o</string>
+     <string name="about_text">Mobile App for Android  v.%s</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_settings">Settings</string>
+    <string name="button_yes">Yes</string>
+    <string name="button_no">No</string>
+    <string name="dialog_confirm_title">Confirm</string>
+    <string name="dialog_confirm_msg">Are you sure?</string>
+    <string name="empty">Empty</string>
+    <string name="title_home">Home</string>
+    <string name="title_login">Login</string>
+    <string name="title_picker_user">Select user</string>
+    <string name="title_picker_country">Select country</string>
+    <string name="title_about">About Mobile App</string>
+    <string name="title_friend_requests">Friend requests</string>
+    <string name="title_friends">Friends</string>
+    <string name="title_friends_home">Friends</string>
+    <string name="title_location">Location</string>
+    <string name="title_mail_compose">Compose Message</string>
+    <string name="title_mail_home">Messages Home</string>
+    <string name="title_mail_message">Message</string>
+    <string name="title_mail_messages">Messages</string>
+    <string name="title_media_add">Add File</string>
+    <string name="title_image_albums">Image Albums</string>
+    <string name="title_image_files">Images</string>
+    <string name="title_image_gallery"></string>
+    <string name="title_sound_albums">Sound Albums</string>
+    <string name="title_sound_files">Sounds</string>
+    <string name="title_video_albums">Video Albums</string>
+    <string name="title_video_files">Videos</string>
+    <string name="title_profile_info">Profile Info</string>
+    <string name="title_search_home">Search Profiles</string>
+    <string name="title_search_keyword">Search By Keyword</string>
+    <string name="title_search_location">Search By Location</string>
+    <string name="title_search_near_me">Search Near Me</string>
+    <string name="title_search_results">Search Results</string>
+    <string name="title_status_message">Status Message</string>
+    <string name="location_acquiring_current">Acquiring current location...</string>
+    <string name="location_undefined">Location is undefined</string>
+    <string name="location_not_available">Your current location is not available</string>
+    <string name="location_settings_title">Location Settings</string>
+    <string name="location_settings_msg">All location providers are disabled in settings. Do you want to go to settings menu?</string>
+    <string name="login_site_url">Site URL:</string>
+    <string name="login_username">Username or eMail:</string>
+    <string name="login_password">Password:</string>
+    <string name="login_remember_password">Remember Password:</string>
+    <string name="login_add">Add</string>
+    <string name="login_delete_site">Delete Site</string>
+    <string name="main_no_sites">Please add at least one Dolphin site</string>
+    <string name="main_add_site">Add a Site</string>
+    <string name="main_about">About</string>
+    <string name="home_logout">Logout</string>
+    <string name="msg_login_incorrect">Login or password is incorrect</string>
+    <string name="msg_url_incorrect">Site URL is incorrect</string>
+    <string name="menu_item_format">%1$1s (%2$1s)</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="status_message_menu">Status</string>
+    <string name="status_message">Status Message:</string>
+    <string name="status_message_update">Update</string>
+    <string name="location_update">Set Current Location</string>
+    <string name="location_menu">Location</string>
+    <string name="location_acquiring">Acquiring current location...</string>
+    <string name="mail_menu">Messages</string>
+    <string name="mail_menu_num">Messages (%s)</string>
+    <string name="mail_menu_inbox">Inbox</string>
+    <string name="mail_menu_inbox_num">Inbox (%s)</string>
+    <string name="mail_menu_sent">Sent</string>
+    <string name="mail_menu_compose">Compose</string>
+    <string name="mail_compose_recipient">Recipient</string>
+    <string name="mail_compose_subject">Subject</string>
+    <string name="mail_compose_text">Text</string>
+    <string name="mail_compose_send">Send</string>
+    <string name="mail_compose_select_user">Select</string>
+    <string name="mail_compose_options_me">Send copy to me</string>
+    <string name="mail_compose_options_recipient">Send copy to recipient</string>
+    <string name="mail_compose_options_both">Send copy to both</string>
+    <string name="mail_reply">Reply</string>
+    <string name="mail_new">NEW</string>
+    <string name="mail_error">ERROR</string>
+    <string name="mail_success">SUCCESS</string>
+    <string name="mail_msg_send_failed">Message send failed</string>
+    <string name="mail_wait_before_sendin_another_msg">You have to wait before sending another message</string>
+    <string name="mail_you_are_blocked">You are being blocked by this recipient</string>
+    <string name="mail_recipient_is_inactive">Recipient profile is not activated</string>
+    <string name="mail_unknown_recipient">Unknown recipient</string>
+    <string name="mail_membership_dont_allow">Your membership doesn\'t allow you to send messages</string>
+    <string name="mail_msg_successfully_sent">Message successfully sent</string>
+    <string name="mail_form_error">Recipient, subject or text is empty</string>
+    <string name="mail_from_x">From: %s</string>
+    <string name="mail_to_x">To: %s</string>
+    <string name="friends_menu">Friends</string>
+    <string name="friends_requests_menu">Friend Requests</string>
+    <string name="friends_requests_menu_num">Friend Requests (%s)</string>
+    <string name="friends_delete">Delete</string>
+    <string name="friends_approve">Approve</string>
+    <string name="friends_reject">Reject</string>
+    <string name="friends_view_profile">View</string>
+    <string name="friends_add_friend">Add Friend</string>
+    <string name="images_menu">Images</string>
+    <string name="media_album_name_num">%1$1s (%2$1s)</string>
+    <string name="media_files_delete">Delete</string>
+    <string name="media_files_view">View</string>
+    <string name="media_images_gallery_next">Next</string>
+    <string name="media_images_gallery_prev">Prev</string>
+    <string name="media_from_camera">Camera</string>
+    <string name="media_from_gallery">Gallery</string>
+    <string name="media_file">File</string>
+    <string name="media_caption_title">Title</string>
+    <string name="media_caption_tags">Tags</string>
+    <string name="media_caption_desc">Description</string>
+    <string name="media_submit">Submit</string>
+    <string name="media_activity_canceled">Activity canceled</string>
+    <string name="media_file_selected">File was successfully selected</string>
+    <string name="media_form_error">Title is empty or file is not selected</string>
+    <string name="media_upload_failed">Upload failed</string>
+    <string name="media_popup_error_title">ERROR</string>
+    <string name="media_upload_success_pending_conversion">File was uploaded, please wait until it is converted</string>
+    <string name="media_error_from_camera_or_gallery">Sorry, file retrieving failed</string>
+    <string name="media_error_file_too_big">File is too big to fit into memory, please try smaller file</string>
+    <string name="media_images_gallery_set_as_avatar">Set as avatar</string>
+    <string name="media_images_gallery_set_as_avatar_ok">Avatar was set</string>
+    <string name="media_images_gallery_set_as_avatar_fail">Avatar set failed</string>
+    <string name="videos_menu">Videos</string>
+    <string name="profile_info_menu">Info</string>
+    <string name="profile_info_contact">Contact</string>
+    <string name="sounds_menu">Sounds</string>
+    <string name="search_menu">Search</string>
+    <string name="search_keyword">Search By Keyword</string>
+    <string name="search_location">Search By Location</string>
+    <string name="search_near_me">Search Near Me</string>
+    <string name="search_keyword_row_caption">Keyword:</string>
+    <string name="search_online_only_row_caption">Online Only:</string>
+    <string name="search_with_photos_only_row_caption">With Photos Only:</string>
+    <string name="search_country_row_caption">Country:</string>
+    <string name="search_city_row_caption">City:</string>
+    <string name="search_select_country">Select</string>
+    <string name="search_submit">Search</string>
+    <string name="search_prev">Prev</string>
+    <string name="search_next">Next</string>
+    <string name="search_country_empty">Please specify country at least</string>
+    <!-- Permission -->
+    <string name="permission_setting">Settings</string>
+    <string name="permission_request_media">This permissions are required: Camera, audio and external storage</string>
+    <string name="permission_request_location">This permissions are required: Location</string>
+    <string name="permission_request">For the correct operation of this application, permissions are required: Location, camera functions (video, photos ...), microphone, among others. Do you grant these permissions?</string>
+</resources>

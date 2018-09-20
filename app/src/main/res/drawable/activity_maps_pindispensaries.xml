@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval" android:width="4dp" android:height="4dp">
+            <solid android:color="@color/color_trans"/>
+        </shape>
+    </item>
+    <item
+        android:drawable="@drawable/pin_map_dispensary"
+        android:bottom="3dp"
+        android:left="3dp"
+        android:right="3dp"
+        android:top="3dp"/>
+</layer-list>

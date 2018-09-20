@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <FrameLayout
+        android:id="@+id/navTitle"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/header_layout">
+
+        <RelativeLayout
+            android:id="@+id/headerRelativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/navTitle">
+
+            <Button
+                android:id="@+id/buttonBack"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="15dip"
+                android:layout_marginTop="1dip"
+                android:background="@drawable/header_back"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/buttonBack"
+                android:layout_alignBottom="@+id/buttonBack"
+                android:layout_toEndOf="@+id/buttonBack"
+                android:layout_toRightOf="@+id/buttonBack"
+                android:singleLine="true"
+                android:layout_marginLeft="10dp"
+                android:text="Title"
+                android:textColor="#000000"
+                android:textColorHint="#999999"
+                android:textSize="15sp"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/navTitle"
+        android:background="@color/white">
+
+
+    </RelativeLayout>
+</RelativeLayout>

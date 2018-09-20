@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	style="@style/OOScreen"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:background="@color/new_bg_background">
+
+
+
+	<!--<FrameLayout
+		android:id="@+id/navTitle"
+		android:layout_width="match_parent"
+		android:layout_height="70dp"
+		android:background="@color/new_bg_background">
+
+		<RelativeLayout
+			android:id="@+id/headerRelativeLayout"
+			android:layout_width="fill_parent"
+			android:layout_marginTop="20dp"
+			android:layout_height="match_parent"
+			android:layout_below="@+id/navTitle">
+
+			<Button
+				android:id="@+id/buttonBack"
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:layout_gravity="left|center_vertical"
+				android:layout_marginLeft="15dip"
+				android:layout_marginTop="1dip"
+				android:background="@drawable/icon_general_backarrow"
+				android:text=""/>
+
+			<TextView
+				android:id="@+id/textTitle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBaseline="@+id/buttonBack"
+				android:layout_alignBottom="@+id/buttonBack"
+				android:layout_toEndOf="@+id/buttonBack"
+				android:layout_toRightOf="@+id/buttonBack"
+				android:singleLine="true"
+				android:layout_marginLeft="10dp"
+				android:text="Title"
+				android:textColor="#000000"
+				android:textColorHint="#999999"
+				android:textSize="14sp"/>
+			<Button
+				android:id="@+id/buttonsend"
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:layout_alignParentRight="true"
+				android:layout_alignParentEnd="true"
+				android:layout_marginRight="10dip"
+				android:layout_marginTop="1dip"
+				android:text=""
+				android:layout_gravity="right|center_vertical"
+				android:background="@drawable/ic_menu_ok"
+				/>
+
+		</RelativeLayout>
+
+	</FrameLayout>-->
+	<ScrollView
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:scrollIndicators="none"
+		android:scrollbars="none"
+		android:overScrollMode="never"
+		android:paddingTop="70dp"
+		android:paddingBottom="60dp"
+		android:clipToPadding="false"
+		android:background="@color/color_trans">
+		<LinearLayout style="@style/OOUniContWholePage">
+			<TextView
+				android:id="@+id/text_recipient"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="@style/MyDefaultTextAppearance"
+				android:text="@string/mail_compose_recipient" />
+			<TableLayout
+				android:id="@+id/mail_compose_table"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="5dp"
+				android:stretchColumns="1">
+				<TableRow>
+					<EditText android:id="@+id/mail_compose_recipient"
+						android:singleLine="true"
+						android:enabled="false"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:background="@drawable/innohawk_border_edittext"
+						android:layout_column="1" />
+
+					<Button
+						android:id="@+id/mail_compose_select_user"
+						android:layout_width="30dp"
+						android:layout_height="30dp"
+						android:layout_alignBottom="@+id/mail_compose_recipient"
+						android:background="@android:drawable/ic_menu_info_details"
+						android:backgroundTint="@color/icono_all_page_strong"
+						android:layout_marginLeft="25dp"
+						android:text=""
+						android:textColor="@color/white" />
+				</TableRow>
+
+
+
+			</TableLayout>
+			<TextView
+				android:id="@+id/text_subject"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="@style/MyDefaultTextAppearance"
+				android:layout_marginBottom="5dp"
+				android:layout_marginTop="15dp"
+				android:text="@string/mail_compose_subject" />
+			<EditText android:id="@+id/mail_compose_subject"
+				android:singleLine="true"
+				android:layout_width="fill_parent"
+				android:background="@drawable/innohawk_border_edittext"
+				android:layout_height="wrap_content" />
+
+
+			<TextView
+				android:id="@+id/text_text"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="@style/MyDefaultTextAppearance"
+				android:layout_marginBottom="5dp"
+				android:text="@string/mail_compose_text" />
+			<EditText android:id="@+id/mail_compose_text"
+				android:singleLine="false"
+				android:gravity="top"
+				android:layout_width="fill_parent"
+				android:background="@drawable/innohawk_border_edittext"
+				android:layout_height="200dip" />
+
+
+			<RadioGroup
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+
+				<RadioButton
+					android:id="@+id/mail_compose_options_me"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:buttonTint="@color/icono_all_page_strong"
+					android:text="@string/mail_compose_options_me"
+					android:textColor="@drawable/xml_color" />
+
+				<RadioButton
+					android:id="@+id/mail_compose_options_recipient"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:buttonTint="@color/icono_all_page_strong"
+					android:checked="true"
+					android:text="@string/mail_compose_options_recipient"
+					android:textColor="@drawable/xml_color" />
+
+				<RadioButton
+					android:id="@+id/mail_compose_options_both"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:buttonTint="@color/icono_all_page_strong"
+					android:text="@string/mail_compose_options_both"
+					android:textColor="@drawable/xml_color" />
+			</RadioGroup>
+		</LinearLayout>
+	</ScrollView>
+
+	<FrameLayout
+		android:id="@+id/navTitle"
+		android:layout_width="match_parent"
+		android:layout_height="70dp"
+		android:background="@drawable/innohawk_header_background">
+		<RelativeLayout
+			android:id="@+id/rl_head"
+			android:layout_width="fill_parent"
+			android:layout_height="match_parent"
+			android:layout_below="@+id/navTitle">
+			<Button
+				android:id="@+id/buttonBack"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:layout_alignParentLeft="true"
+				android:layout_centerVertical="true"
+				android:layout_marginLeft="15dp"
+				android:background="@drawable/header_back"/>
+			<TextView
+				android:id="@+id/textTitle"
+				android:layout_width="fill_parent"
+				android:layout_height="30dp"
+				android:layout_centerVertical="true"
+				android:layout_toEndOf="@+id/buttonBack"
+				android:layout_toLeftOf="@+id/buttonsend"
+				android:layout_toRightOf="@+id/buttonBack"
+				android:layout_toStartOf="@+id/buttonsend"
+				android:ems="12"
+				android:gravity="center_horizontal|center"
+				android:layout_marginLeft="15dp"
+				android:layout_marginRight="15dp"
+				android:singleLine="true"
+				android:text= " Title "
+				android:textColor="@color/black"
+				android:textColorHint="#999999"
+				android:textSize="15sp" />
+			<Button
+				android:id="@+id/buttonsend"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:layout_marginRight="15dp"
+				android:background="@drawable/header_submit"/>
+		</RelativeLayout>
+	</FrameLayout>
+</RelativeLayout>

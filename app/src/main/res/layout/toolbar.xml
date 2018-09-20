@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar_layout_wrapper"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    android:gravity="left"
+    android:orientation="vertical">
+    <!---->
+    <RadioGroup
+        android:id="@+id/toolbarradiogroup"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/navbar_background"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/btnProfile"
+            style="@style/navbar_button"
+            android:drawableTop="@drawable/navbar_profile"
+            android:textColor="@drawable/navbar_color_text" />
+
+        <RadioButton
+            android:id="@+id/btnHome"
+            style="@style/navbar_button"
+            android:layout_marginLeft="5dp"
+            android:drawableTop="@drawable/navbar_home"
+            android:textColor="@drawable/navbar_color_text" />
+
+        <RadioButton
+            android:id="@+id/btnMail"
+            style="@style/navbar_button"
+            android:layout_marginLeft="5dp"
+            android:drawableTop="@drawable/navbar_mail"
+            android:scaleX="1.1"
+            android:scaleY="1.1"
+            android:textColor="@drawable/navbar_color_text" />
+
+        <RadioButton
+            android:id="@+id/btnFriend"
+            style="@style/navbar_button"
+            android:layout_marginLeft="5dp"
+            android:drawableTop="@drawable/navbar_friend"
+            android:textColor="@drawable/navbar_color_text" />
+
+        <RadioButton
+            android:id="@+id/btnSearch"
+            style="@style/navbar_button"
+            android:layout_marginLeft="5dp"
+            android:drawableTop="@drawable/navbar_search"
+            android:textColor="@drawable/navbar_color_text" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/toolbarnotifications"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/support_badget1"
+            style="@style/navbar_notification_space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/badge_notification_1"
+            style="@style/navbar_bubble"
+            android:layout_marginLeft="-18dip"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/support_badget2"
+            style="@style/navbar_notification_space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:id="@+id/badge_notification_2"
+            style="@style/navbar_bubble"
+            android:layout_marginLeft="-18dip"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/support_badget3"
+            style="@style/navbar_notification_space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:id="@+id/badge_notification_3"
+            style="@style/navbar_bubble"
+            android:layout_marginLeft="-18dip"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/support_badget4"
+            style="@style/navbar_notification_space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:id="@+id/badge_notification_4"
+            style="@style/navbar_bubble"
+            android:layout_marginLeft="-18dip"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/support_badget5"
+            style="@style/navbar_notification_space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:id="@+id/badge_notification_5"
+            style="@style/navbar_bubble"
+            android:layout_marginLeft="-18dip"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+</RelativeLayout>

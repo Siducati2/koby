@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    style="@style/OOScreen"
+    android:background="@color/new_bg_background">
+
+    <ListView
+        android:scrollIndicators="none"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:paddingTop="70dp"
+        android:paddingBottom="60dp"
+        android:clipToPadding="false"
+        android:background="@color/color_trans"
+        android:id="@+id/android:list"
+        style="@style/OOListView" />
+
+    <TextView android:id="@+id/android:empty" style="@style/OOUniEmpty" android:text="@string/empty" />
+
+    <FrameLayout
+        android:id="@+id/navTitle"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/innohawk_header_background">
+        <RelativeLayout
+            android:id="@+id/rl_head"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/navTitle">
+            <Button
+                android:id="@+id/buttonBack"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/header_back"/>
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/buttonBack"
+                android:layout_toLeftOf="@+id/buttonRefresh"
+                android:layout_toRightOf="@+id/buttonBack"
+                android:layout_toStartOf="@+id/buttonRefresh"
+                android:ems="12"
+                android:gravity="center_horizontal|center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:singleLine="true"
+                android:text= " Title "
+                android:textColor="@color/black"
+                android:textColorHint="#999999"
+                android:textSize="15sp" />
+            <Button
+                android:id="@+id/buttonRefresh"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/header_reload"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+
+</RelativeLayout>

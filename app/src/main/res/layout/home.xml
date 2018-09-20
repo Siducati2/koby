@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!---<android.support.v4.widget.DrawerLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/drawer_layout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:padding="0dp"
+	android:background="@color/white">
+
+	<FrameLayout
+		android:id="@+id/navTitle"
+		android:layout_width="match_parent"
+		android:layout_height="70dp"
+		android:background="@color/header_layout">
+
+
+		<Button
+			android:id="@+id/iconLogo"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_marginLeft="15dip"
+			android:layout_marginTop="1dip"
+			android:text=""
+			android:layout_gravity="left|center_vertical"
+			android:background="@drawable/ic_menu_home" />
+
+		<EditText
+			android:id="@+id/Search_Edit"
+			android:layout_width="fill_parent"
+			android:layout_height="40dp"
+			android:layout_marginTop="15dp"
+			android:layout_marginBottom="15dp"
+			android:layout_alignBottom="@+id/iconLogo"
+			android:layout_marginLeft="80dp"
+			android:layout_marginRight="150dp"
+			android:layout_toEndOf="@+id/iconLogo"
+			android:layout_toRightOf="@+id/iconLogo"
+			android:ems="10"
+			android:inputType="textPersonName"
+			android:background="@drawable/innohawk_bordersearch"
+			android:hint="Search SeeProfile..."
+			android:textSize="10dp"
+			android:textColorHint="#999999"/>
+
+		<Button
+			android:id="@+id/buttonLogout"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_marginTop="1dip"
+			android:layout_marginRight="95dip"
+			android:text=""
+			android:layout_alignParentRight="true"
+			android:layout_alignParentEnd="true"
+			android:layout_gravity="right|center_vertical"
+			android:background="@drawable/ic_menu_logout" />
+		<Button
+			android:id="@+id/buttonRefresh"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentEnd="true"
+			android:layout_marginRight="55dip"
+			android:layout_marginTop="1dip"
+			android:text=""
+			android:layout_gravity="right|center_vertical"
+			android:background="@drawable/ic_menu_refresh" />
+
+		<Button
+			android:id="@+id/buttonNoti"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentEnd="true"
+			android:layout_marginRight="10dip"
+			android:layout_marginTop="1dip"
+			android:text=""
+			android:layout_gravity="right|center_vertical"
+			android:background="@drawable/ic_menu_logobud"
+			/>
+
+		<TextView
+			android:id="@+id/home_noti_bubble"
+			style="@style/OOHomeBubbleBar"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentEnd="true"
+			android:text="" />
+
+	</FrameLayout>
+
+	<ScrollView
+		android:id="@+id/horizontalScrollView"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_below="@+id/navTitle"
+		android:background="@color/white">
+
+		<TableLayout
+			android:id="@+id/home_table"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="20dp"
+			android:layout_width="wrap_content"/>
+	</ScrollView>
+	<!-- The first child in the layout is for the main Activity UI-->
+
+	<!-- Side navigation drawer UI -->
+	<!--<ListView
+		android:id="@+id/navList"
+		android:layout_width="200dp"
+		android:layout_height="match_parent"
+		android:layout_gravity="left|start"
+		android:background="#ffeeeeee"/>-->
+	<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/drawer_layout"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:visibility="invisible">
+	<ListView
+		android:id="@+id/navList"
+		android:layout_width="240dp"
+		android:layout_height="match_parent"
+		android:layout_gravity="start"
+		android:choiceMode="singleChoice"
+		android:divider="@android:color/transparent"
+		android:dividerHeight="0dp"
+		android:background="@color/OOMain" />
+	</android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>
+<!--<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	style="@style/OOScreen"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/bg_screen"
+	android:orientation="vertical" >
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="99dp"
+		android:background="@drawable/bg_screen"
+		android:orientation="vertical" >
+
+		<View style="@style/Divider"/>
+
+		<HorizontalScrollView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/horizontalScrollView"
+			android:background="@drawable/bg_screen">
+
+			<TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dip"
+                android:paddingBottom="10dip"
+                android:id="@+id/home_table" />
+		</HorizontalScrollView>
+
+		<View style="@style/Divider"/>
+
+	</LinearLayout>
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@drawable/bg_screen">
+		<WebView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/webView" />
+	</ScrollView>
+
+</LinearLayout>-->
+<!-- <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	style="@style/OOScreen"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" >
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center_horizontal"
+		android:orientation="vertical" >
+
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@drawable/actionbar_shadow"
+		android:orientation="vertical" >
+
+		<Space
+			android:layout_width="20px"
+			android:layout_height="20px" />
+
+		<View style="@style/Divider"/>
+
+		<TableLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingTop="10dip"
+			android:paddingBottom="10dip"
+			android:id="@+id/home_table" />
+
+		<View style="@style/Divider"/>
+
+	</LinearLayout>
+		<WebView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/webView" />
+
+	</LinearLayout>
+
+</ScrollView> -->

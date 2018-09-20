@@ -1,0 +1,71 @@
+<!--
+  Copyright 2011 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<resources>
+
+    <declare-styleable name="MyTheme">
+        <attr name="actionbarCompatTitleStyle" format="reference" />
+        <attr name="actionbarCompatItemStyle" format="reference" />
+        <attr name="actionbarCompatItemHomeStyle" format="reference" />
+        <attr name="actionbarCompatProgressIndicatorStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="BezelImageView">
+        <attr name="maskDrawable" format="reference" />
+        <attr name="borderDrawable" format="reference" />
+    </declare-styleable>
+
+    <!-- Calendar-->
+    <attr name="compactCalendarEventIndicatorStyle" format="enum">
+        <enum name="fill_large_indicator" value="1" />
+        <enum name="no_fill_large_indicator" value="2" />
+        <enum name="small_indicator" value="3" />
+    </attr>
+    <attr name="compactCalendarCurrentDayIndicatorStyle" format="enum">
+        <enum name="fill_large_indicator" value="1" />
+        <enum name="no_fill_large_indicator" value="2" />
+    </attr>
+    <attr name="compactCalendarCurrentSelectedDayIndicatorStyle" format="enum">
+        <enum name="fill_large_indicator" value="1" />
+        <enum name="no_fill_large_indicator" value="2" />
+    </attr>
+    <declare-styleable name="CompactCalendarView">
+        <attr name="compactCalendarTextSize" format="dimension"/>
+        <attr name="compactCalendarBackgroundColor" format="color"/>
+        <attr name="compactCalendarCurrentDayBackgroundColor" format="color"/>
+        <attr name="compactCalendarCurrentDayTextColor" format="color"/>
+        <attr name="compactCalendarCurrentSelectedDayBackgroundColor" format="color"/>
+        <attr name="compactCalendarCurrentSelectedDayTextColor" format="color"/>
+        <attr name="compactCalendarTextColor" format="color"/>
+        <attr name="compactCalendarMultiEventIndicatorColor" format="color"/>
+        <attr name="compactCalendarTargetHeight" format="dimension"/>
+        <attr name="compactCalendarEventIndicatorStyle"/>
+        <attr name="compactCalendarCurrentDayIndicatorStyle"/>
+        <attr name="compactCalendarCurrentSelectedDayIndicatorStyle"/>
+        <attr name="compactCalendarDisplayOtherMonthDays" format="boolean"/>
+        <attr name="compactCalendarShouldSelectFirstDayOfMonthOnScroll" format="boolean"/>
+        <attr name="compactCalendarOtherMonthDaysTextColor" format="color"/>
+    </declare-styleable>
+
+    <!--Splash Custom-->
+    <declare-styleable name="TwitterSplashView">
+        <attr name="icon" format="reference"/>
+        <attr name="iconColor" format="color"/>
+        <attr name="holeFillColor" format="color"/>
+        <attr name="duration" format="integer"/>
+        <attr name="removeFromParentOnEnd" format="boolean"/>
+    </declare-styleable>
+</resources>

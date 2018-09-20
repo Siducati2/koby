@@ -1,0 +1,94 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'com.google.gms.google-services'
+
+android {
+    signingConfigs {
+        BudBuddee {
+            keyAlias 'BudBuddee'
+            keyPassword 'BoonEx123123'
+            storeFile file('/Users/innohawk/Desktop/innoHawk/Clientes/BoonEx/Dan/AndroidOficial/Android/BudBuddee')
+            storePassword 'BoonEx123123'
+        }
+    }
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "com.innohawk.dan"
+        minSdkVersion 17
+        targetSdkVersion 26
+        // Enabling multidex support.
+        multiDexEnabled true
+        //signingConfig signingConfigs.Soocial
+        signingConfig signingConfigs.BudBuddee
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            // signingConfig signingConfigs.Soocial
+            pseudoLocalesEnabled true
+            proguardFile '/Users/innohawk/Desktop/innoHawk/Clientes/BoonEx/Dan/AndroidOficial/Android_Dan/budbuddee/app/proguard-rules.pro'
+            signingConfig signingConfigs.BudBuddee
+        }
+        debug {
+            //signingConfig signingConfigs.Soocial
+            minifyEnabled false
+            pseudoLocalesEnabled false
+            proguardFile '/Users/innohawk/Desktop/innoHawk/Clientes/BoonEx/Dan/AndroidOficial/Android_Dan/budbuddee/app/proguard-rules.pro'
+            signingConfig signingConfigs.BudBuddee
+        }
+    }
+    dexOptions {
+        incremental true
+        javaMaxHeapSize "4g" // 2g should be also OK
+    }
+    useLibrary 'org.apache.http.legacy'
+    productFlavors {
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+repositories {
+    mavenCentral()
+    jcenter()
+    google()
+}
+
+dependencies {
+    /*compile fileTree(include: ['*.jar'], dir: 'libs')
+                    compile project(':nineoldandroids-2.4.0')
+                    compile 'com.android.support:multidex:1.0.1'
+                    compile 'com.facebook.android:facebook-android-sdk:4.10.0'
+                    compile 'com.google.android.gms:play-services:9.0.0'
+                    compile 'com.google.android.gms:play-services-maps:9.0.0'
+                    compile 'com.google.android.gms:play-services-ads:9.0.0'
+                    compile 'com.google.android.gms:play-services-gcm:9.0.0'
+                    compile 'com.android.volley:volley:1.0.0'
+                    compile 'com.jakewharton:butterknife:8.4.0'
+                    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+                    compile 'com.android.support:design:26.0.0-alpha1'
+                    compile 'com.squareup.picasso:picasso:2.5.1'*/
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':nineoldandroids-2.4.0')
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.facebook.android:facebook-android-sdk:4.10.0'
+    compile 'com.google.android.gms:play-services:10.2.1'
+    compile 'com.google.android.gms:play-services-maps:10.2.1'
+    compile 'com.google.android.gms:play-services-ads:10.2.1'
+    //compile 'com.google.android.gms:play-services-gcm:9.0.0'
+    compile 'com.google.firebase:firebase-messaging:10.2.1'
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile 'com.android.support:support-v4:26.0.0-alpha1'
+    compile 'com.android.support:recyclerview-v7:26.0.0-alpha1'
+    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
+    compile 'com.android.support:design:26.0.0-alpha1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+
+}
+// Add to the bottom of the file
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:padding="0dp"
+	android:background="@color/header_layout"
+	android:fillViewport="true">
+
+
+	<!--<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="140dp"
+		android:id="@+id/imageViewBG"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentEnd="true"
+		android:background="@drawable/bg_screen" />-->
+
+	<RelativeLayout
+		android:id="@+id/ScrollLayout"
+		android:layout_width="fill_parent"
+		android:layout_height="match_parent">
+
+	<Button
+		android:id="@+id/btn_terms"
+		style="?android:attr/buttonStyleSmall"
+		android:layout_width="30dp"
+		android:layout_height="30dp"
+		android:layout_alignEnd="@+id/rl_infodialog"
+		android:layout_alignRight="@+id/rl_infodialog"
+		android:layout_marginRight="15dp"
+		android:layout_marginTop="15dp"
+		android:allowUndo="false"
+		android:background="@android:drawable/ic_dialog_info"
+		android:backgroundTint="@color/black"
+		android:text=""
+		android:visibility="invisible"/>
+
+	<ImageView
+		android:gravity="top"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:layout_marginLeft="10dip"
+		android:layout_marginTop="40dip"
+		android:layout_marginBottom="10dip"
+		android:layout_marginRight="10dip"
+		android:id="@+id/logoViewMain"
+		android:src="@drawable/logo_general"
+		android:layout_below="@+id/rl_infodialog" />
+	<RelativeLayout
+		android:id="@+id/RelLayoutLogin"
+		android:orientation="horizontal"
+		android:layout_marginTop="0dp"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/logoViewMain"
+		android:background="@color/new_bg_background"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentEnd="true">
+		<TextView
+			android:id="@+id/textView"
+			android:layout_width="match_parent"
+			android:layout_height="58dp"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentStart="true"
+			android:layout_alignParentTop="true"
+			android:fontFamily="carlito"
+			android:gravity="center"
+			android:text="@string/Movement_Student"
+			android:textColor="@color/switch_thumb_disabled_material_dark"
+			android:textSize="24sp"
+			android:textStyle="bold|italic" />
+
+		<!-- ICON -->
+		<Button
+			android:id="@+id/icon_mail"
+			android:layout_width="100dp"
+			android:layout_height="100dp"
+			android:layout_alignLeft="@+id/username_icon"
+			android:layout_alignStart="@+id/username_icon"
+			android:layout_below="@+id/textView"
+			android:background="@color/color_trans"
+			android:drawableTop="@drawable/initmailmain"
+			android:padding="3dp"
+			android:text="Members"
+			android:textColor="@color/black"
+			android:textSize="10dp" />
+
+		<ImageView
+			android:id="@+id/icon_mail_arrow"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:layout_alignEnd="@+id/icon_mail"
+			android:layout_alignLeft="@+id/icon_mail"
+			android:layout_alignRight="@+id/icon_mail"
+			android:layout_alignStart="@+id/icon_mail"
+			android:layout_below="@+id/textView"
+			android:layout_marginTop="87dp"
+			android:src="@drawable/initarrowmain"
+			android:tint="@color/icono_all_page_strong"/>
+
+		<Button
+			android:id="@+id/btn_guest"
+			android:layout_width="100dp"
+			android:layout_height="100dp"
+			android:layout_below="@+id/textView"
+			android:layout_centerHorizontal="true"
+			android:padding="3dp"
+			android:background="@color/color_trans"
+			android:drawableTop="@drawable/initguestmain"
+			android:text="Guest"
+			android:textSize="10dp"
+			android:textColor="@color/black"/>
+
+		<ImageView
+			android:id="@+id/icon_guest_arrow"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:layout_alignEnd="@+id/btn_guest"
+			android:layout_alignLeft="@+id/btn_guest"
+			android:layout_alignRight="@+id/btn_guest"
+			android:layout_alignStart="@+id/btn_guest"
+			android:layout_below="@+id/textView"
+			android:layout_marginTop="87dp"
+			android:src="@drawable/initarrowmain"
+			android:tint="@color/icono_all_page_strong"/>
+
+		<com.facebook.login.widget.LoginButton
+			android:id="@+id/loginFB_button"
+			android:layout_width="100dp"
+			android:layout_height="100dp"
+			android:layout_alignBottom="@+id/btn_guest"
+			android:layout_alignEnd="@+id/loginFB_buttonDraw"
+			android:layout_alignRight="@+id/loginFB_buttonDraw"
+			android:layout_below="@+id/textView"
+			android:padding="3dp"
+			android:visibility="invisible" />
+
+		<Button
+			android:id="@+id/loginFB_buttonDraw"
+			android:layout_width="100dp"
+			android:layout_height="100dp"
+			android:layout_alignEnd="@+id/editTextUsername"
+			android:layout_alignRight="@+id/editTextUsername"
+			android:layout_below="@+id/textView"
+			android:background="@color/color_trans"
+			android:drawableTop="@drawable/initfacebookmain"
+			android:padding="3dp"
+			android:text="Fb Login"
+			android:textColor="@color/black"
+			android:textSize="10dp" />
+		<ImageView
+			android:id="@+id/icon_fb_arrow"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:layout_alignEnd="@+id/loginFB_buttonDraw"
+			android:layout_alignLeft="@+id/loginFB_buttonDraw"
+			android:layout_alignRight="@+id/loginFB_buttonDraw"
+			android:layout_alignStart="@+id/loginFB_buttonDraw"
+			android:layout_below="@+id/textView"
+			android:layout_marginTop="87dp"
+			android:src="@drawable/initarrowmain"
+			android:tint="@color/icono_all_page_strong"/>
+
+
+
+		<!-- ICON SELECT-->
+		<ImageView
+			android:padding="3dp"
+			android:layout_marginLeft="25dp"
+			android:id="@+id/username_icon"
+			android:src="@drawable/icon_general_user"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_below="@+id/icon_mail_arrow"/>
+		<EditText
+			android:id="@+id/editTextUsername"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignBottom="@+id/username_icon"
+			android:layout_marginRight="25dp"
+			android:layout_toEndOf="@+id/username_icon"
+			android:layout_toRightOf="@+id/username_icon"
+			android:backgroundTint="#00000000"
+			android:hint="@string/email_signup"
+			android:singleLine="true"
+			android:textColor="#000000"
+			android:textColorHint="#999999"
+			android:textSize="15sp"
+			android:textStyle="bold" />
+
+
+		<ImageView
+			android:id="@+id/imageViewLinePass"
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:layout_marginLeft="25dp"
+			android:layout_marginRight="25dp"
+			android:layout_below="@+id/username_icon"
+			android:background="@color/icono_all_page" />
+
+		<!-- ICON -->
+		<ImageView
+			android:padding="3dp"
+			android:layout_marginTop="15dp"
+			android:layout_marginLeft="25dp"
+			android:id="@+id/pass_icon"
+			android:src="@drawable/icon_general_pass"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_below="@+id/editTextUsername"/>
+
+		<EditText
+			android:id="@+id/editTextPassword"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignBottom="@+id/pass_icon"
+			android:layout_below="@+id/editTextUsername"
+			android:layout_marginRight="25dp"
+			android:layout_marginTop="15dp"
+			android:layout_toEndOf="@+id/pass_icon"
+			android:layout_toRightOf="@+id/pass_icon"
+			android:backgroundTint="#00000000"
+			android:fontFamily="sans-serif"
+			android:hint="@string/pass_signup"
+			android:inputType="textPassword"
+			android:password="true"
+			android:singleLine="true"
+			android:textColorHint="#999999"
+			android:textIsSelectable="false"
+			android:textSize="14sp"
+			android:textStyle="bold" />
+
+		<ImageView
+			android:id="@+id/imageViewLinePass2"
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:layout_marginLeft="25dp"
+			android:layout_marginRight="25dp"
+			android:layout_below="@+id/pass_icon"
+			android:background="@color/icono_all_page"/>
+
+		<Button
+			android:id="@+id/action_LogIn"
+			android:layout_width="fill_parent"
+			android:layout_height="35dp"
+			android:layout_alignEnd="@+id/imageViewLinePass2"
+			android:layout_alignLeft="@+id/imageViewLinePass2"
+			android:layout_alignRight="@+id/imageViewLinePass2"
+			android:layout_alignStart="@+id/imageViewLinePass2"
+			android:layout_below="@+id/imageViewLinePass2"
+			android:layout_marginTop="23dp"
+			android:background="@drawable/innohawk_borderbutton_main"
+			android:text="@string/Main_login"
+			android:textAppearance="@style/MyDefaultTextAppearance"
+			android:textColor="@color/black"
+			android:textSize="16sp" />
+
+		<Button
+			android:id="@+id/action_Forgot"
+			android:layout_width="fill_parent"
+			android:layout_height="30dp"
+			android:layout_alignEnd="@+id/action_LogIn"
+			android:layout_alignLeft="@+id/action_LogIn"
+			android:layout_alignRight="@+id/action_LogIn"
+			android:layout_alignStart="@+id/action_LogIn"
+			android:layout_below="@+id/action_LogIn"
+			android:layout_marginBottom="5dip"
+			android:layout_marginTop="5dip"
+			android:background="@color/OOMain"
+			android:text="@string/Main_Forgot"
+			android:textAppearance="@style/MyDefaultTextAppearance"
+			android:textColor="@color/aluminum"
+			android:textSize="16sp" />
+
+		<TextView
+			android:id="@+id/textViewAccount"
+			android:layout_width="match_parent"
+			android:layout_height="28dp"
+			android:layout_alignEnd="@+id/action_Forgot"
+			android:layout_alignLeft="@+id/action_Forgot"
+			android:layout_alignRight="@+id/action_Forgot"
+			android:layout_alignStart="@+id/action_Forgot"
+			android:layout_below="@+id/action_Forgot"
+			android:layout_marginTop="35dip"
+			android:fontFamily="carlito"
+			android:gravity="center"
+			android:text="@string/Main_Account"
+			android:textColor="@color/aluminum"
+			android:textSize="16sp"
+			android:textStyle="bold"
+			android:typeface="normal" />
+
+		<Button
+			android:id="@+id/action_SignUp"
+			android:layout_width="200dp"
+			android:layout_height="35dp"
+			android:layout_alignEnd="@+id/textViewAccount"
+			android:layout_alignLeft="@+id/textViewAccount"
+			android:layout_alignRight="@+id/textViewAccount"
+			android:layout_alignStart="@+id/textViewAccount"
+			android:layout_below="@+id/textViewAccount"
+			android:layout_marginBottom="5dip"
+			android:background="@drawable/innohawk_borderbutton_main"
+			android:text="@string/Main_register"
+			android:textAppearance="@style/MyDefaultTextAppearance"
+			android:textColor="@color/black"
+			android:textSize="16sp" />
+
+		<!--<ListView android:id="@+id/android:list" style="@style/OOListView"
+			android:layout_height="1dp"
+			android:visibility="invisible" />-->
+	</RelativeLayout>
+
+	<!--<LinearLayout
+		android:id="@+id/linearLayout"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="bottom"
+		android:visibility="gone"
+		android:layout_marginBottom="3dip">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/info"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentTop="true"
+			android:layout_gravity="center_horizontal"
+			android:text="@string/Main_login_socials"
+			android:layout_marginTop="15dip"
+			android:textSize="15sp"
+			android:textColor="@color/accent"
+			android:layout_marginBottom="15dip"/>
+
+		<Button
+			android:id="@+id/action_SignUp"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="4dip"
+			android:layout_marginLeft="20dip"
+			android:layout_marginRight="20dip"
+			android:layout_marginBottom="5dip"
+			android:background="#428bca"
+			android:text="@string/Main_register"
+			android:textColor="@color/white"/>
+
+		<com.facebook.login.widget.LoginButton
+			android:id="@+id/loginFB_button"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingTop="15dp"
+			android:paddingBottom="15dp"
+			android:layout_marginRight="20dp"
+			android:layout_marginLeft="20dp"/>
+
+	</LinearLayout>-->
+
+
+
+	<RelativeLayout
+		android:id="@+id/rl_infodialog"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" >
+	</RelativeLayout>
+
+
+	<!--<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/info"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:layout_gravity="center_horizontal"
+		android:text="@string/Main_login_socials"
+		android:layout_marginTop="15dip"
+		android:textSize="15sp"
+		android:textColor="@color/accent"
+		android:layout_marginBottom="15dip"
+		android:visibility="gone"/>
+
+	<Button
+		android:id="@+id/action_SignUp"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="4dip"
+		android:layout_marginLeft="20dip"
+		android:layout_marginRight="20dip"
+		android:layout_marginBottom="5dip"
+		android:background="#428bca"
+		android:text="@string/Main_register"
+		android:textColor="@color/white"
+		android:visibility="gone"/>
+
+	<com.facebook.login.widget.LoginButton
+		android:id="@+id/loginFB_button"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingTop="15dp"
+		android:paddingBottom="15dp"
+		android:layout_marginRight="20dp"
+		android:layout_marginLeft="20dp"
+		android:visibility="gone"/>-->
+
+	</RelativeLayout>
+</ScrollView>

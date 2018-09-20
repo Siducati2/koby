@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="center"
+	android:orientation="vertical"
+	android:padding="1dp"
+	android:background="@color/new_bg_background">
+
+
+
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+        android:scrollIndicators="none"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:paddingTop="70dp"
+        android:paddingBottom="60dp"
+        android:clipToPadding="false"
+        android:background="@color/color_trans">
+
+		<ListView android:id="@+id/android:list"
+			style="@style/OOListView" />
+
+		<TextView android:id="@+id/android:empty" style="@style/OOUniEmpty" android:text="@string/empty" />
+
+	</LinearLayout>
+
+	<FrameLayout
+		android:id="@+id/navTitle"
+		android:layout_width="match_parent"
+		android:layout_height="70dp"
+		android:background="@color/new_Headerbackground_opacity">
+
+		<RelativeLayout
+			android:id="@+id/headerRelativeLayout"
+			android:layout_width="fill_parent"
+			android:layout_height="match_parent"
+			android:layout_below="@+id/navTitle">
+
+			<Button
+				android:id="@+id/buttonBack"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:layout_alignParentLeft="true"
+				android:layout_centerVertical="true"
+				android:layout_marginLeft="15dp"
+				android:background="@drawable/header_back"
+				android:text=""/>
+
+			<TextView
+				android:id="@+id/textTitle"
+				android:layout_width="fill_parent"
+				android:layout_height="30dp"
+				android:layout_centerVertical="true"
+				android:layout_toEndOf="@+id/buttonBack"
+				android:layout_toLeftOf="@+id/buttonRefresh"
+				android:layout_toRightOf="@+id/buttonBack"
+				android:layout_toStartOf="@+id/buttonRefresh"
+				android:ems="12"
+				android:gravity="left|center"
+				android:layout_marginLeft="15dp"
+				android:layout_marginRight="15dp"
+				android:singleLine="true"
+				android:text= " Title "
+				android:textColor="@color/black"
+				android:textColorHint="#999999"
+				android:textSize="15sp" />
+
+			<Button
+				android:id="@+id/buttonreplay"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:layout_marginRight="155dp"
+				android:background="@drawable/ic_menu_reply"
+				android:text=""
+				android:visibility="invisible"/>
+			<Button
+				android:id="@+id/buttonAdd"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:layout_marginRight="105dp"
+				android:background="@drawable/header_add"
+				android:text=""
+				android:visibility="invisible"/>
+			<Button
+				android:id="@+id/buttonnext"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:layout_marginRight="55dp"
+				android:background="@drawable/ic_menu_next"
+				android:text=""
+				android:visibility="invisible"/>
+
+			<Button
+				android:id="@+id/buttonRefresh"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:layout_marginRight="15dp"
+				android:background="@drawable/header_reload"
+				android:visibility="invisible"/>
+		</RelativeLayout>
+	</FrameLayout>
+
+	<RelativeLayout
+		android:id="@+id/rl_infodialog"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" >
+	</RelativeLayout>
+
+</RelativeLayout>

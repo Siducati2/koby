@@ -1,0 +1,97 @@
+<resources>
+
+    <dimen name="margin">10dip</dimen>
+    <dimen name="margin2">5dip</dimen>
+    <dimen name="marginList">1dip</dimen>
+    <dimen name="padding">10dip</dimen>
+    <dimen name="padding2">5dip</dimen>
+    <dimen name="paddingList">5dip</dimen>
+    <!-- Common container -->
+    <dimen name="cont_margin">@dimen/margin</dimen>
+    <dimen name="cont_padding">@dimen/padding</dimen>
+
+    <!-- "Empty" container -->
+    <dimen name="cont_empty_padding">5pt</dimen>
+    <dimen name="cont_empty_font_size">14dip</dimen>
+
+    <!-- Profile Info -->
+    <dimen name="profile_info_text_size">12dip</dimen>
+    <dimen name="profile_info_title_text_size">18dip</dimen>
+    <dimen name="profile_info_data_margin_top">@dimen/margin</dimen>
+
+    <!-- Button -->
+    <dimen name="button_margin">@dimen/margin</dimen>
+
+    <!-- List View -->
+    <dimen name="list_picker_divider_size">1dip</dimen>
+    <dimen name="list_divider_size">@dimen/marginList</dimen>
+    <dimen name="list_padding">@dimen/paddingList</dimen>
+
+    <!-- Thumbnail -->
+    <dimen name="thumb_cont_info_page_margin_top">@dimen/margin</dimen>
+    <dimen name="thumb_cont_info_page_margin_left">@dimen/margin</dimen>
+    <dimen name="thumb_cont_info_page_margin_right">@dimen/margin</dimen>
+    <dimen name="thumb_image_width">64dip</dimen>
+    <dimen name="thumb_image_height">64dip</dimen>
+    <dimen name="thumb_image_margin_top">@dimen/margin2</dimen>
+    <dimen name="thumb_image_margin_right">@dimen/margin</dimen>
+    <dimen name="thumb_image_margin_bottom">@dimen/margin2</dimen>
+    <dimen name="thumb_image_margin_left">@dimen/margin2</dimen>
+    <dimen name="thumb_title_font_size">20dip</dimen>
+    <dimen name="thumb_text1_font_size">12dip</dimen>
+    <dimen name="thumb_text2_font_size">12dip</dimen>
+
+    <!-- Home Button -->
+    <dimen name="home_button_width">96dip</dimen> <!-- inicialmente 96-->
+    <dimen name="home_button_height">96dip</dimen>
+    <dimen name="home_button_cont_width">96dip</dimen> <!-- inicialmente 96-->
+    <dimen name="home_button_cont_height">96dip</dimen>
+    <dimen name="home_button_img_width">65dip</dimen> <!-- inicialmente 65-->
+    <dimen name="home_button_img_height">65dip</dimen>
+    <dimen name="home_button_img_margin_top">8dip</dimen> <!-- inicialmente 8-->
+    <dimen name="home_button_img_margin_bottom">8dip</dimen>
+    <dimen name="home_button_text_size">12dip</dimen> <!-- inicialmente 12-->
+    <dimen name="home_button_bubble_height">22dip</dimen> <!-- inicialmente 22-->
+    <dimen name="home_button_bubble_text_size">12dip</dimen> <!-- inicialmente 12-->
+    <dimen name="home_button_bubble_padding_top">1dip</dimen>
+    <dimen name="home_button_bubble_padding_bottom">1dip</dimen>
+    <dimen name="home_button_bubble_padding_left">1dip</dimen>
+    <dimen name="home_button_bubble_padding_right">1dip</dimen>
+
+    <!--  ActionBar -->
+    <dimen name="actionbar_compat_height">48dp</dimen>
+    <dimen name="actionbar_compat_button_width">48dp</dimen>
+    <dimen name="actionbar_compat_button_home_width">48dp</dimen>
+    <dimen name="actionbar_compat_button_home_padding_left">12dp</dimen>
+    <dimen name="actionbar_compat_title_text_size">18sp</dimen>
+    <dimen name="actionbar_compat_title_padding_left">2dp</dimen>
+    <dimen name="actionbar_compat_title_padding_right">6dp</dimen>
+    <dimen name="marginBOTONES">500dp</dimen>
+
+    <!-- Add Code CreationBCN:: PcIntegrad -->
+
+    <!-- Nav Bar -->
+    <dimen name="home_button_bubbleToolbar_width">20dip</dimen>
+    <dimen name="home_button_bubbleToolbar_height">20dip</dimen>
+    <dimen name="home_button_bubbleToolbar_text_size">10dip</dimen>
+    <dimen name="home_button_bubbleToolbar_padding_top">1dip</dimen>
+    <dimen name="home_button_bubbleToolbar_padding_bottom">1dip</dimen>
+    <dimen name="home_button_bubbleToolbar_padding_left">1dip</dimen>
+    <dimen name="home_button_bubbleToolbar_padding_right">1dip</dimen>
+    <dimen name="home_button_bubbleToolbar_margin_top">18dip</dimen>
+    <dimen name="home_button_bubbleToolbar_margin_right">3dip</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Top  Bar -->
+    <dimen name="tp_button_bubble_padding_top">1dip</dimen>
+    <dimen name="tp_button_bubble_padding_bottom">1dip</dimen>
+    <dimen name="tp_button_bubble_padding_left">1dip</dimen>
+    <dimen name="tp_button_bubble_padding_right">1dip</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines:: SIGN & LOGIN FORMS-->
+
+    <!-- End Code -->
+
+</resources>

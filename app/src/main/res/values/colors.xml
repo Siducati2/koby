@@ -1,0 +1,76 @@
+<resources>
+    <color name="twitter_blue">#17A9E5</color>
+    <color name="new_Headerbackground_opacity">#DEbcbcbc</color>
+    <color name="new_background_opacity">#80bcbcbc</color>
+    <color name="new_background">#eeeeee</color>
+    <color name="bg_background">#e6e2f0d9</color>
+    <color name="header_layout">#bcbcbc</color>
+    <color name="subheader_layout">#D8D8D8</color>
+    <color name="new_bg_background">#eeeeee</color>
+    <color name="icono_all_page_strong">#4daa4d</color>
+    <color name="icono_all_page">#95d095</color>
+    <!-- SIGNUP & LOGIN FORMS -->
+    <color name="primary">#ff097b9e</color>
+    <color name="primary_dark">#428bca</color>
+    <color name="primary_darker">#428bca</color>
+    <color name="accent">#ffffff</color>
+    <color name="red">#FF000F</color>
+    <color name="black">#000000</color>
+    <color name="yellow_gold">#FACC2E</color>
+    <color name="jet">#222222</color>
+    <color name="oil">#333333</color>
+    <color name="monsoon">#777777</color>
+    <color name="jumbo">#888888</color>
+    <color name="aluminum">#999999</color>
+    <color name="base">#AAAAAA</color>
+    <color name="iron">#cccccc</color>
+    <color name="iron_light">#f2f2f2</color>
+    <color name="tabbar">#7ee2f0d9</color>
+    <color name="list_divider">#e2f0d9</color>
+    <color name="text_color">#333333</color>
+    
+    <!-- List View -->
+    <color name="list_cache_color_hint">#00000000</color>
+    
+    <!-- Thumbnail -->
+    <color name="thumb_image_bg">#ff000000</color>
+    
+    <!-- Home Button -->
+    <color name="home_button_bubble_text_color">#fff</color>
+    
+	<!-- Action Bar -->    
+    <color name="actionbar_title_color">#333333</color>
+
+    <!-- Code Add CreationBCN::PcIntegrad -->
+
+    <!-- trans -->
+    <color name="color_trans">#00000000</color>
+
+    <!-- Nav Bar -->
+    <color name="actionnavbar_title_color">#bdbdbd</color>
+    <color name="actionnavbar_title_color_select">#000000</color>
+
+    <!-- BackGrounds -->
+    <color name="OOMain">#00cecece</color>
+
+    <!-- Color Register and Login -->
+    <color name="bg_register">#2e3237</color>
+    <color name="bg_main">#428bca</color>
+    <color name="white">#ffffff</color>
+    <color name="input_login">#222222</color>
+    <color name="input_login_hint">#999999</color>
+    <color name="input_register">#888888</color>
+    <color name="input_register_bg">#3b4148</color>
+    <color name="input_register_hint">#5e6266</color>
+    <color name="btn_login">#26ae90</color>
+    <color name="btn_login_bg">#eceef1</color>
+    <color name="lbl_name">#333333</color>
+    <color name="btn_logut_bg">#ff6861</color>
+
+    <!-- Indroduction Page -->
+    <color name="pageViewBubble">#000</color>
+    <color name="pagePassBubble">#fff</color>
+
+
+
+</resources>
